@@ -1,0 +1,97 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+.next/
+
+# CDK
+infrastructure/cdk.out/
+infrastructure/*.js
+infrastructure/*.d.ts
+!infrastructure/jest.config.js
+
+# Docker
+docker/data/
+
+# Certificates
+certificates/
+*.pem
+*.key
+*.crt
+
+# Logs
+logs/
+*.log
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Test
+*.test.js
+*.spec.js
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# AWS
+.aws-sam/
+samconfig.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.Python
+venv/
+env/
+
+# Backup files
+*.backup
+*.bak
+
+# LocalStack
+.localstack/
+
+# Session files
+session-store/
+
+# Upload directories
+uploads/
+
+# Generated files
+*.generated.*

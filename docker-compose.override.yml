@@ -1,0 +1,23 @@
+version: '3.8'
+
+# Development-specific overrides
+services:
+  postgres:
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: personalpod
+      POSTGRES_PASSWORD: devpassword
+      POSTGRES_DB: personalpod_dev
+
+  api:
+    build:
+      target: development
+    volumes:
+      - ./api:/app
+      - /app/node_modules
+      - ./api/.env.development:/app/.env
+    environment:
+      - NODE_ENV=development
+      - DEBUG=personalpod:*
+    command: npm run dev:watch

@@ -1,0 +1,322 @@
+{
+  "searchIndices": [
+    {
+      "pk": "USER#a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "sk": "SEARCH#title#meeting",
+      "gsi1pk": "SEARCHTYPE#title",
+      "gsi1sk": "TIMESTAMP#2025-01-16T10:00:00Z",
+      "entryIds": ["d6e7f8a9-b0c1-2345-defa-678901234567", "b0c1d2e3-f4a5-6789-bcde-012345678901"],
+      "searchType": "title",
+      "searchTerm": "meeting",
+      "resultCount": 2,
+      "metadata": {
+        "highlightPositions": {
+          "d6e7f8a9-b0c1-2345-defa-678901234567": [0, 7],
+          "b0c1d2e3-f4a5-6789-bcde-012345678901": [34, 41]
+        }
+      },
+      "ttl": 1737097200,
+      "createdAt": "2025-01-16T10:00:00Z",
+      "updatedAt": "2025-01-16T10:00:00Z"
+    },
+    {
+      "pk": "USER#a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "sk": "SEARCH#tag#important",
+      "gsi1pk": "SEARCHTYPE#tag",
+      "gsi1sk": "TIMESTAMP#2025-01-16T10:05:00Z",
+      "entryIds": ["d6e7f8a9-b0c1-2345-defa-678901234567", "e7f8a9b0-c1d2-3456-efab-789012345678"],
+      "searchType": "tag",
+      "searchTerm": "important",
+      "resultCount": 2,
+      "metadata": {
+        "tagId": "d0e1f2a3-b4c5-6789-defa-012345678901"
+      },
+      "ttl": 1737097500,
+      "createdAt": "2025-01-16T10:05:00Z",
+      "updatedAt": "2025-01-16T10:05:00Z"
+    },
+    {
+      "pk": "USER#b2c3d4e5-f6a7-8901-bcde-f23456789012",
+      "sk": "SEARCH#content#chocolate",
+      "gsi1pk": "SEARCHTYPE#content",
+      "gsi1sk": "TIMESTAMP#2025-01-16T10:10:00Z",
+      "entryIds": ["c1d2e3f4-a5b6-7890-cdef-123456789012"],
+      "searchType": "content",
+      "searchTerm": "chocolate",
+      "resultCount": 1,
+      "metadata": {
+        "excerpts": {
+          "c1d2e3f4-a5b6-7890-cdef-123456789012": "...2 cups chocolate chips..."
+        }
+      },
+      "ttl": 1737097800,
+      "createdAt": "2025-01-16T10:10:00Z",
+      "updatedAt": "2025-01-16T10:10:00Z"
+    }
+  ],
+  "sessionManagement": [
+    {
+      "pk": "SESSION#sess_1234567890abcdef",
+      "sk": "USER#a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "sessionId": "sess_1234567890abcdef",
+      "userId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "deviceId": "device_macbook_pro_001",
+      "deviceName": "John's MacBook Pro",
+      "deviceType": "desktop",
+      "ipAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+      "isActive": true,
+      "lastActivityAt": "2025-01-16T09:30:00Z",
+      "expiresAt": "2025-01-17T09:30:00Z",
+      "createdAt": "2025-01-15T09:30:00Z",
+      "metadata": {
+        "browser": "Chrome",
+        "browserVersion": "120.0.0",
+        "os": "macOS",
+        "osVersion": "14.2"
+      },
+      "ttl": 1737183000
+    },
+    {
+      "pk": "SESSION#sess_234567890abcdef1",
+      "sk": "USER#a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "sessionId": "sess_234567890abcdef1",
+      "userId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "deviceId": "device_iphone_001",
+      "deviceName": "John's iPhone",
+      "deviceType": "mobile",
+      "ipAddress": "192.168.1.101",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X)",
+      "isActive": true,
+      "lastActivityAt": "2025-01-16T08:00:00Z",
+      "expiresAt": "2025-01-23T08:00:00Z",
+      "createdAt": "2025-01-09T08:00:00Z",
+      "metadata": {
+        "app": "PersonalPod iOS",
+        "appVersion": "1.0.0",
+        "os": "iOS",
+        "osVersion": "17.2"
+      },
+      "ttl": 1737615600
+    },
+    {
+      "pk": "SESSION#sess_34567890abcdef12",
+      "sk": "USER#b2c3d4e5-f6a7-8901-bcde-f23456789012",
+      "sessionId": "sess_34567890abcdef12",
+      "userId": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
+      "deviceId": "device_surface_001",
+      "deviceName": "Jane's Surface",
+      "deviceType": "tablet",
+      "ipAddress": "192.168.1.102",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Edge/120.0.0",
+      "isActive": true,
+      "lastActivityAt": "2025-01-16T07:45:00Z",
+      "expiresAt": "2025-01-17T07:45:00Z",
+      "createdAt": "2025-01-15T07:45:00Z",
+      "metadata": {
+        "browser": "Edge",
+        "browserVersion": "120.0.0",
+        "os": "Windows",
+        "osVersion": "11"
+      },
+      "ttl": 1737178500
+    }
+  ],
+  "cache": [
+    {
+      "pk": "CACHE#user_stats#a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "sk": "VERSION#1",
+      "cacheType": "user_stats",
+      "cacheKey": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "data": {
+        "totalEntries": 5,
+        "entriesByType": {
+          "note": 1,
+          "password": 1,
+          "document": 1,
+          "bookmark": 1,
+          "task": 1
+        },
+        "totalCategories": 4,
+        "totalTags": 4,
+        "favoriteCount": 2,
+        "lastActivity": "2025-01-16T09:30:00Z"
+      },
+      "compressionType": null,
+      "sizeBytes": 256,
+      "hitCount": 15,
+      "lastAccessedAt": "2025-01-16T09:30:00Z",
+      "expiresAt": "2025-01-17T09:30:00Z",
+      "ttl": 1737183000,
+      "createdAt": "2025-01-16T00:00:00Z",
+      "metadata": {}
+    },
+    {
+      "pk": "CACHE#category_tree#a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "sk": "VERSION#1",
+      "cacheType": "category_tree",
+      "cacheKey": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "data": {
+        "categories": [
+          {
+            "id": "d4e5f6a7-b8c9-0123-defa-456789012345",
+            "name": "Personal",
+            "slug": "personal",
+            "color": "#3B82F6",
+            "icon": "user",
+            "children": []
+          },
+          {
+            "id": "e5f6a7b8-c9d0-1234-efab-567890123456",
+            "name": "Work",
+            "slug": "work",
+            "color": "#10B981",
+            "icon": "briefcase",
+            "children": []
+          },
+          {
+            "id": "f6a7b8c9-d0e1-2345-fabc-678901234567",
+            "name": "Projects",
+            "slug": "projects",
+            "color": "#8B5CF6",
+            "icon": "folder",
+            "children": []
+          },
+          {
+            "id": "a7b8c9d0-e1f2-3456-abcd-789012345678",
+            "name": "Finance",
+            "slug": "finance",
+            "color": "#F59E0B",
+            "icon": "dollar-sign",
+            "children": []
+          }
+        ]
+      },
+      "compressionType": null,
+      "sizeBytes": 512,
+      "hitCount": 25,
+      "lastAccessedAt": "2025-01-16T09:25:00Z",
+      "expiresAt": "2025-01-17T00:00:00Z",
+      "ttl": 1737147600,
+      "createdAt": "2025-01-16T00:00:00Z",
+      "metadata": {}
+    },
+    {
+      "pk": "CACHE#recent_entries#b2c3d4e5-f6a7-8901-bcde-f23456789012",
+      "sk": "VERSION#1",
+      "cacheType": "recent_entries",
+      "cacheKey": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
+      "data": {
+        "entries": [
+          {
+            "id": "c1d2e3f4-a5b6-7890-cdef-123456789012",
+            "title": "Grandma's Chocolate Chip Cookies",
+            "type": "note",
+            "category": "Recipes",
+            "updatedAt": "2025-01-15T14:00:00Z"
+          },
+          {
+            "id": "d2e3f4a5-b6c7-8901-defa-234567890123",
+            "title": "Paris Trip Itinerary",
+            "type": "note",
+            "category": "Travel",
+            "updatedAt": "2025-01-14T10:00:00Z"
+          }
+        ],
+        "totalCount": 2
+      },
+      "compressionType": null,
+      "sizeBytes": 384,
+      "hitCount": 8,
+      "lastAccessedAt": "2025-01-16T07:45:00Z",
+      "expiresAt": "2025-01-16T12:00:00Z",
+      "ttl": 1737108000,
+      "createdAt": "2025-01-16T00:00:00Z",
+      "metadata": {
+        "limit": 10,
+        "offset": 0
+      }
+    }
+  ],
+  "syncQueue": [
+    {
+      "pk": "USER#a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "sk": "TIMESTAMP#2025-01-16T09:00:00Z#sync_001",
+      "syncId": "sync_001",
+      "userId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "deviceId": "device_macbook_pro_001",
+      "syncType": "update",
+      "entityType": "entry",
+      "entityId": "d6e7f8a9-b0c1-2345-defa-678901234567",
+      "syncData": {
+        "changes": {
+          "content": "Updated meeting notes with action items"
+        }
+      },
+      "syncStatus": "completed",
+      "syncSequence": 1001,
+      "retryCount": 0,
+      "lastError": null,
+      "processedAt": "2025-01-16T09:00:05Z",
+      "completedAt": "2025-01-16T09:00:10Z",
+      "createdAt": "2025-01-16T09:00:00Z",
+      "ttl": 1737615600,
+      "metadata": {
+        "syncVersion": "1.0",
+        "conflictResolution": "client-wins"
+      }
+    },
+    {
+      "pk": "USER#a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "sk": "TIMESTAMP#2025-01-16T09:15:00Z#sync_002",
+      "syncId": "sync_002",
+      "userId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "deviceId": "device_iphone_001",
+      "syncType": "create",
+      "entityType": "entry",
+      "entityId": "new_entry_001",
+      "syncData": {
+        "title": "Quick note from phone",
+        "content": "Remember to buy milk",
+        "type": "note",
+        "categoryId": "d4e5f6a7-b8c9-0123-defa-456789012345"
+      },
+      "syncStatus": "pending",
+      "syncSequence": 1002,
+      "retryCount": 0,
+      "lastError": null,
+      "processedAt": null,
+      "completedAt": null,
+      "createdAt": "2025-01-16T09:15:00Z",
+      "ttl": 1737615600,
+      "metadata": {
+        "syncVersion": "1.0",
+        "offline": true
+      }
+    },
+    {
+      "pk": "USER#b2c3d4e5-f6a7-8901-bcde-f23456789012",
+      "sk": "TIMESTAMP#2025-01-16T07:30:00Z#sync_003",
+      "syncId": "sync_003",
+      "userId": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
+      "deviceId": "device_surface_001",
+      "syncType": "delete",
+      "entityType": "entry",
+      "entityId": "old_entry_001",
+      "syncData": {
+        "reason": "User deleted entry"
+      },
+      "syncStatus": "completed",
+      "syncSequence": 501,
+      "retryCount": 0,
+      "lastError": null,
+      "processedAt": "2025-01-16T07:30:02Z",
+      "completedAt": "2025-01-16T07:30:03Z",
+      "createdAt": "2025-01-16T07:30:00Z",
+      "ttl": 1737615600,
+      "metadata": {
+        "syncVersion": "1.0"
+      }
+    }
+  ]
+}

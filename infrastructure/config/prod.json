@@ -1,0 +1,36 @@
+{
+  "environment": "prod",
+  "region": "us-east-1",
+  "account": "YOUR_PROD_ACCOUNT_ID",
+  "apiGateway": {
+    "throttleRateLimit": 1000,
+    "throttleBurstLimit": 2000
+  },
+  "lambda": {
+    "memorySize": 1024,
+    "timeout": 30,
+    "reservedConcurrentExecutions": 100
+  },
+  "dynamodb": {
+    "readCapacity": 25,
+    "writeCapacity": 25
+  },
+  "cognito": {
+    "mfa": "REQUIRED",
+    "passwordPolicy": {
+      "minLength": 12,
+      "requireLowercase": true,
+      "requireUppercase": true,
+      "requireDigits": true,
+      "requireSymbols": true
+    }
+  },
+  "monitoring": {
+    "enableDetailedMetrics": true,
+    "logRetentionDays": 30
+  },
+  "alarms": {
+    "enabled": true,
+    "snsTopicEmail": "alerts@personalpod.com"
+  }
+}

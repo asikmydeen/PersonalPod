@@ -1,0 +1,32 @@
+{
+  "environment": "dev",
+  "region": "eu-west-1",
+  "account": "YOUR_DEV_ACCOUNT_ID",
+  "apiGateway": {
+    "throttleRateLimit": 100,
+    "throttleBurstLimit": 200
+  },
+  "lambda": {
+    "memorySize": 512,
+    "timeout": 30,
+    "reservedConcurrentExecutions": 10
+  },
+  "dynamodb": {
+    "readCapacity": 5,
+    "writeCapacity": 5
+  },
+  "cognito": {
+    "mfa": "OPTIONAL",
+    "passwordPolicy": {
+      "minLength": 8,
+      "requireLowercase": true,
+      "requireUppercase": true,
+      "requireDigits": true,
+      "requireSymbols": true
+    }
+  },
+  "monitoring": {
+    "enableDetailedMetrics": true,
+    "logRetentionDays": 7
+  }
+}
