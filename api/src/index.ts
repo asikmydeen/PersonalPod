@@ -10,6 +10,11 @@ import { config } from './config';
 import { logger } from './utils/logger';
 import { errorHandler, notFound } from './middleware/errorHandler';
 import authRoutes from './routes/auth.routes';
+import entryRoutes from './routes/entry.routes';
+import categoryRoutes from './routes/category.routes';
+import tagRoutes from './routes/tag.routes';
+import fileRoutes from './routes/file.routes';
+import searchRoutes from './routes/search.routes';
 import { db } from './services/database.service';
 import { authService } from './services/auth.service';
 
@@ -82,6 +87,11 @@ app.get('/health', async (req, res) => {
 // API routes
 app.use('/api/auth', authRoutes);
 app.use('/api/mfa', require('./routes/mfa.routes').default);
+app.use('/api/entries', entryRoutes);
+app.use('/api/categories', categoryRoutes);
+app.use('/api/tags', tagRoutes);
+app.use('/api/files', fileRoutes);
+app.use('/api/search', searchRoutes);
 
 // 404 handler
 app.use(notFound);
